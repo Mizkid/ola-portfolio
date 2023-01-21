@@ -5,7 +5,8 @@ import styled from 'styled-components'
 export const Section1 = () => {
     const onClick = () => {
         window.open(
-            "https://drive.google.com/file/d/19g3gobgGnRJwrjDqp8Z_-_wVLAxiOfhW/view?usp=share_link"
+            "https://drive.google.com/file/d/19g3gobgGnRJwrjDqp8Z_-_wVLAxiOfhW/view?usp=share_link",
+            "_blank"
         )
     }
     return (
@@ -14,7 +15,7 @@ export const Section1 = () => {
                 <h1>Hi, I am Olawale, a Webpage Developer</h1>
                 <p>This is all about me creating my webpage, and showing to the world that i am a Webpage Developer.
                     I develope and design and create webpages and software applications..</p>
-                <Section1Button> Download Resume </Section1Button>
+                <Section1Button onClick={onClick}> Download Resume </Section1Button>
             </Section1Container>
             <div>
                 <Section1Image src="/mizzy.png"
