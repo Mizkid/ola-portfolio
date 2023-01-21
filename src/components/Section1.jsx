@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from "styled-components"
+import styled from 'styled-components'
 
 
 export const Section1 = () => {
@@ -13,11 +13,11 @@ export const Section1 = () => {
             <Section1Container>
                 <h1>Hi, I am Olawale, a Webpage Developer</h1>
                 <p>This is all about me creating my webpage, and showing to the world that i am a Webpage Developer.
-                    I develope and design and create webpages and software applications.</p>
+                    I develope and design and create webpages and software applications..</p>
                 <Section1Button> Download Resume </Section1Button>
             </Section1Container>
             <div>
-                <Section1Image src="/mizzy.jpg"
+                <Section1Image src="/mizzy.png"
                     alt="my-picture" />
             </div>
         </Section1Wrapper>
