@@ -1,0 +1,10 @@
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --text-color-light: rgb(182, 179, 179);
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}
