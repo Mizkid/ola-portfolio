@@ -38,7 +38,7 @@ text-align: left;
 `
 const Section1Button = styled.button`
 background-color: orangered;
-    border-radius: 2px;
+    border-radius: 12px;
     border: hidden;
     width: 200px;
     color: #ffff;
@@ -49,7 +49,7 @@ background-color: orangered;
     cursor: pointer;
     `
 const Section1Image = styled.img`
- border-radius: 20px;
+ border-radius: 155px;
  height: 246px;
  width="200px"
  `   

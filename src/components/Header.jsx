@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 export const Header = ({ navigationData }) => (
     <HeaderWrapper>
-        {navigationData.map((navigation) => <nav>{
-            navigation}</nav>)}
+        {navigationData.map((navigation) => (
+            <nav key={navigation}>{navigation}</nav>))}
     </HeaderWrapper>
 );
 
