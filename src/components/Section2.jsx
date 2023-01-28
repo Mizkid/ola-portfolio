@@ -17,15 +17,21 @@ const jobData = [
 ];
 
 export const Section2 = () => {
+    const onClick = () => {
+        window.open(
+            "https://drive.google.com/file/d/19g3gobgGnRJwrjDqp8Z_-_wVLAxiOfhW/view?usp=share_link",
+            "_blank"
+        );
+    };
     return (
         <Section2Wrapper>
             <Section2firstitem>
                 <div>Recent Jobs</div>
-                <Colouredtext > View all</Colouredtext>
+                <Colouredtext onClick={onClick} > View all</Colouredtext>
             </Section2firstitem>
             <Section2SecondItem>
                 {jobData.map((item) => (
-                    <Section2ItemComponent key={item} {...item} />
+                    <Section2ItemComponent {...item} />
                 ))}
 
             </Section2SecondItem>
@@ -33,8 +39,7 @@ export const Section2 = () => {
     );
 };
 
-const Section2ItemComponent = ({
-    companyName,
+const Section2ItemComponent = ({ companyName,
     date,
     position,
     description,

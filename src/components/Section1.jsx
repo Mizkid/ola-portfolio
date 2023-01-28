@@ -7,8 +7,8 @@ export const Section1 = () => {
         window.open(
             "https://drive.google.com/file/d/19g3gobgGnRJwrjDqp8Z_-_wVLAxiOfhW/view?usp=share_link",
             "_blank"
-        )
-    }
+        );
+    };
     return (
         <Section1Wrapper>
             <Section1Container>

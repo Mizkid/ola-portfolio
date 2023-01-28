@@ -17,7 +17,6 @@ export const App = () => {
         <Section2 />
         <Section3 />
       </Main>
-
       <Footer />
     </div>
   );
