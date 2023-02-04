@@ -31,7 +31,7 @@ export const Section2 = () => {
             </Section2firstitem>
             <Section2SecondItem>
                 {jobData.map((item) => (
-                    <Section2ItemComponent {...item} />
+                    <Section2ItemComponent key={item} {...item} />
                 ))}
 
             </Section2SecondItem>
@@ -59,12 +59,21 @@ const Section2Wrapper = styled.div`
     background-color: rgb(217, 240, 247);
     padding: 30px 80px;
     font-family: "Heebo";
+
+    @media (max-width: 500px){
+        width: auto;
+    }
 `;
 
 const Section2firstitem = styled.div`
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+
+    @media (max-width: 500px) {
+        justify-content: center;
+        align-items: center;
+    }
     `;
 
 const Colouredtext = styled.div`
@@ -73,6 +82,10 @@ const Colouredtext = styled.div`
     border: hidden;
     background-color: rgb(217, 240, 247);
     cursor: pointer;
+
+    @media (max-width: 500px) {
+        display: none;
+    }
     `;
 
 const Section2SecondItem = styled.div`
@@ -82,6 +95,10 @@ const Section2SecondItem = styled.div`
     width: 100%;
     background-color: rgb(214, 240, 248);
     gap: 40px;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
     `;
 
 const Items = styled.div`
@@ -90,6 +107,10 @@ const Items = styled.div`
     text-align: left;
     gap: 30px;
     padding: 0 15px 0 15px;
+
+    @media (max-width: 500px){
+        width:auto;
+    }
     `;
 
 const ItemHeading = styled.h3`

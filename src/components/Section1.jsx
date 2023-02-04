@@ -26,15 +26,27 @@ export const Section1 = () => {
 }
 
 const Section1Wrapper = styled.div`
-display: flex;
+    display: flex;
     width: 100%;
     justify-content: space-around;
-`
+
+    @media (max-width: 500px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0 24px;
+    }
+`;
 const Section1Container = styled.div`
 display: flex;
 flex-direction: column;
 width: 40%;
 text-align: left;
+
+@media (max-width: 500px){
+    width: auto;
+    padding: 0 24px;
+}
 `
 const Section1Button = styled.button`
 background-color: orangered;
