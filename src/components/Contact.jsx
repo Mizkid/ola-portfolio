@@ -48,6 +48,10 @@ box-shadow: 0 0 5px navy;
 border-radius: 10px;
 padding: 14px;
 gap:24px;
+
+@media (max-width: 500px) {
+    max-width: auto;
+}
 `;
 
 const FormItem = styled.div`

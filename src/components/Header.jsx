@@ -23,7 +23,12 @@ const HeaderWrapper = styled.header`
     height: 80px;
     font-weight: bold;
     font-size: 20px;
-    padding: 20px;
+    padding: 20px
+
+    @media (max-width: 500px) {
+        max-width: 500px;
+
+    }
 `;
 
 const Navigation = styled.nav`
