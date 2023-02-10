@@ -23,6 +23,7 @@ body {
     gap: 40px;
     margin: 0 auto;
     width: 1200px;
+    min-height: calc( 100vh - 370px) ;
     
     @media (max-width: 500px) {
         max-width: 500px;

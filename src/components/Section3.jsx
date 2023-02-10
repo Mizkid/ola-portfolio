@@ -85,6 +85,7 @@ justify-content: space-between;
 text-align: left;
 font: 22px bold;
 margin-bottom: 15px;
+padding-left: 30px;
 `;
 
 const Section3SecondItem = styled.div`
@@ -135,6 +136,8 @@ const Span = styled.span`
 
 const Paragraph = styled.p`
     color: rgb(141, 139, 139);
+    @media (max-width: 500px){
+        width: auto;
     `;
 
 const SeperatorWrapper = styled.div`

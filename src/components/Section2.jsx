@@ -55,7 +55,7 @@ const Section2Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 100%;
+    width: auto;
     background-color: rgb(217, 240, 247);
     padding: 30px 80px;
     font-family: "Heebo";

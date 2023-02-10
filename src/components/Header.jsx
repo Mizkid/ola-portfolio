@@ -1,12 +1,19 @@
 import React from 'react'
 import styled from "styled-components"
+import { useNavigate, useLocation } from 'react-router-dom';
 
-export const Header = ({ navigationData }) => (
-    <HeaderWrapper>
-        {navigationData.map((navigation) => (
-            <nav key={navigation}>{navigation}</nav>))}
-    </HeaderWrapper>
-);
+export const Header = ({ navigationData }) => {
+    const navigate = useNavigate();
+    const location = useLocation();
+    return (
+        <HeaderWrapper>
+            {navigationData.map(({ name, path }) => (
+                <Navigation key={name} isActive={location.pathname === path}
+                    onClick={() => navigate(path)}>
+                    {name}</Navigation>))}
+        </HeaderWrapper>
+    );
+};
 
 const HeaderWrapper = styled.header`
     display: flex;
@@ -18,3 +25,11 @@ const HeaderWrapper = styled.header`
     font-size: 20px;
     padding: 20px;
 `;
+
+const Navigation = styled.nav`
+color: ${(props) => (props.isActive ? "lightblue" : "default")};
+:hover {
+    cursor: pointer;
+    
+}
+`
