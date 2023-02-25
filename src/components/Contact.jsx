@@ -14,6 +14,13 @@ export const Contact = () => {
         }));
     };
 
+    const onClick = () => {
+        window.open(
+            "https://myaccount.google.com/",
+            "_blank"
+        );
+    };
+
     return (
         <Wrapper>
             <FormItem>
@@ -35,7 +42,7 @@ export const Contact = () => {
                 <StyleLabel>Information:</StyleLabel>
                 <StyledTextArea onBlur={(e) => onBlur("information", e.target.value)} />
             </FormItem>
-            <StyledButton>Submit request</StyledButton>
+            <StyledButton onClick={onClick}>Submit request</StyledButton>
         </Wrapper>
     )
 }
@@ -48,9 +55,10 @@ box-shadow: 0 0 5px navy;
 border-radius: 10px;
 padding: 14px;
 gap:24px;
+width: 500px;
 
 @media (max-width: 500px) {
-    max-width: auto;
+    max-width: 350px;
 }
 `;
 
@@ -58,6 +66,11 @@ const FormItem = styled.div`
 display: grid;
 grid-template-columns: 200px 1fr;
 gap: 24px;
+width: 450px;
+
+@media (max-width: 500px) {
+    max-width: 350px;
+}
 `
 const StyleLabel = styled.div`
 font-size: 24px;
@@ -72,6 +85,10 @@ line-height: 20px;
 padding: 2px;
 text-align: center;
 
+@media (max-width: 500px) {
+    min-width: 120px;
+}
+
 :focus {
     outline: none !important;
     border: 1px solid lightblue;
@@ -85,6 +102,10 @@ min-height: 80px;
 border-radius: 6px;
 padding: 2px;
 text-align: left;
+
+@media (max-width: 500px) {
+    min-width: 120px;
+}
 
 :focus {
     outline: none !important;

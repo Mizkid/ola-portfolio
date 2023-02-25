@@ -1,37 +1,20 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-
-const sectionData = [
-    {
-        imageUrl: "/VsCode.png",
-        heading: "Designing a Website",
-        year: "2022",
-        works: "Worksheet",
-        paragraph: "This about my first text in building a webpage using CSS and Javascript, trying to create a site where people could get my info and know much about me. i created this arond september year 2022.",
-    },
-    {
-        imageUrl: "/Potrait.png",
-        heading: "Vibrant Potrait of 2021",
-        year: "2021",
-        works: "Potrait",
-        paragraph: "This was only created to be my Potrait in illustrating my works/designs in building my webpage in year 2021, before i could learn on how to use Javascript and CSS in year 2022.",
-    },
-    {
-        imageUrl: "/Sargitarius.png",
-        heading: "My Days in Creating my website",
-        year: "2023",
-        works: "Typography",
-        paragraph: "Here comes my days in designing my first website, it was all along reading online about been a Developer, i read about it for like 2 months and then i started my journey been a webpage/software developer and here i am today building my first webpage.",
-    },
-]
+import { useNavigate, useLocation } from 'react-router-dom';
 
 
-export const Section3 = () => {
+export const Section3 = ({ sectionData }) => {
+    const navigate = useNavigate();
+    const location = useLocation();
     return (
         <Section3Wrapper>
-            <Section3FirstItem>
-                Featured Projects / Works
-            </Section3FirstItem>
+            {location.pathname !== "/projects" && (
+                <Section3FirstItem>
+                    <Ftp>Featured Projects</Ftp>
+                    <Colouredtext onClick={() => navigate("projects")} > View all</Colouredtext>
+                </Section3FirstItem>
+            )}
+
             {sectionData.map((works) => (
                 <Fragment key={works}>
                     <Section3ItemComponent {...works} />
@@ -83,10 +66,26 @@ const Section3FirstItem = styled.div`
 display: flex;
 justify-content: space-between;
 text-align: left;
-font: 22px bold;
 margin-bottom: 15px;
-padding-left: 30px;
+padding: 0 30px 0 30px
 `;
+
+const Ftp = styled.div`
+font: 18px bold;
+`
+
+const Colouredtext = styled.div`
+    color: blue;
+    font: 12px;
+    padding: 3px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(217, 240, 247);
+
+    @media (max-width: 500px) {
+        display: none;
+    }
+    `;
 
 const Section3SecondItem = styled.div`
     display: flex;
@@ -97,7 +96,7 @@ const Section3SecondItem = styled.div`
     padding: 0 150px;
 
     @media (max-width: 500px){
-        width: 500px;
+        width: 450px;
         padding: 0 24px;
     }
     `;

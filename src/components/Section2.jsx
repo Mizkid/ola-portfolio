@@ -1,36 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useNavigate, useLocation } from 'react-router-dom';
 
-const jobData = [
-    {
-        companyName: "Learning about Programing.",
-        date: "05 Jan 2015",
-        position: "Computer , Literacy",
-        description: "I started my learning after secondary school year 2014, i love been a computer programmer and a software developer, then this how my journey been a programmer and a webpage/sofware developer.",
-    },
-    {
-        companyName: "Creating logo perfect in Afri-Tech",
-        date: "17 April 2015",
-        position: "Afri-Tech , Logo Design",
-        description: "This was about creating my first Logo in my work place @ Afri-Tech, It was very exicting then, creating something meaningful on my fourth months. And then graduated there in September 2015.",
-    },
-];
 
-export const Section2 = () => {
-    const onClick = () => {
-        window.open(
-            "https://drive.google.com/file/d/19g3gobgGnRJwrjDqp8Z_-_wVLAxiOfhW/view?usp=share_link",
-            "_blank"
-        );
-    };
+export const Section2 = ({ sectionData, isExperience }) => {
+    const navigate = useNavigate();
+    const location = useLocation();
+
     return (
         <Section2Wrapper>
-            <Section2firstitem>
-                <div>Recent Jobs</div>
-                <Colouredtext onClick={onClick} > View all</Colouredtext>
-            </Section2firstitem>
-            <Section2SecondItem>
-                {jobData.map((item) => (
+            {location.pathname !== "/works" && (
+                <Section2firstitem>
+                    <div>Recent Jobs</div>
+                    <Colouredtext onClick={() => navigate("works")} > View all</Colouredtext>
+                </Section2firstitem>
+            )}
+
+            <Section2SecondItem isExperience={isExperience}>
+                {sectionData.map((item) => (
                     <Section2ItemComponent key={item} {...item} />
                 ))}
 
@@ -90,11 +77,13 @@ const Colouredtext = styled.div`
 
 const Section2SecondItem = styled.div`
     display: flex;
+    flex-direction: ${props => props.isExperience ? "column" : "row"};
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: rgb(214, 240, 248);
     gap: 40px;
+    flex-basis: 0;
 
     @media (max-width: 500px) {
         flex-direction: column;
@@ -102,11 +91,10 @@ const Section2SecondItem = styled.div`
     `;
 
 const Items = styled.div`
-    width: 45.2%;
     background-color: var(--bg-color);
-    text-align: left;
+    text-align: initial;
     gap: 30px;
-    padding: 0 15px 0 15px;
+    padding: 24px;
 
     @media (max-width: 500px){
         width:auto;

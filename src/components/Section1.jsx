@@ -5,14 +5,14 @@ import styled from 'styled-components'
 export const Section1 = () => {
     const onClick = () => {
         window.open(
-            "https://drive.google.com/file/d/19g3gobgGnRJwrjDqp8Z_-_wVLAxiOfhW/view?usp=share_link",
+            "https://drive.google.com/file/d/1LDjzZuYbGKtBUBi97Yk1T3uxq4IkDN5X/view?usp=share_link",
             "_blank"
         );
     };
     return (
         <Section1Wrapper>
             <Section1Container>
-                <h1>Hi, I am Olawale, a Webpage Developer</h1>
+                <h1>Hi, I am Abdulmojeed, a Webpage Developer</h1>
                 <p>This is all about me creating my webpage, and showing to the world that i am a Webpage Developer.
                     I develope and design and create webpages and software applications..</p>
                 <Section1Button onClick={onClick}> Download Resume </Section1Button>
@@ -35,6 +35,7 @@ const Section1Wrapper = styled.div`
         justify-content: center;
         align-items: center;
         padding: 0 24px;
+        width: 400px;
     }
 `;
 const Section1Container = styled.div`
@@ -44,7 +45,7 @@ width: 40%;
 text-align: left;
 
 @media (max-width: 500px){
-    width: auto;
+    width: 400px;
     padding: 0 24px;
 }
 `

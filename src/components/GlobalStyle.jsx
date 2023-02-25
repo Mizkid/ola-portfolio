@@ -26,7 +26,7 @@ body {
     min-height: calc( 100vh - 370px) ;
     
     @media (max-width: 500px) {
-        max-width: 500px;
+        max-width: 480px;
 
     }
 }
