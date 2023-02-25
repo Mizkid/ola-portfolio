@@ -16,7 +16,7 @@ export const Contact = () => {
 
     const onClick = () => {
         window.open(
-            "https://myaccount.google.com/",
+            "mailto:ahmedmojeed25@gmail.com",
             "_blank"
         );
     };
