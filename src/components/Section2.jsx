@@ -9,10 +9,10 @@ export const Section2 = ({ sectionData, isExperience }) => {
 
     return (
         <Section2Wrapper>
-            {location.pathname !== "/works" && (
+            {location.pathname !== "/jobs" && (
                 <Section2firstitem>
                     <div>Recent Jobs</div>
-                    <Colouredtext onClick={() => navigate("works")} > View all</Colouredtext>
+                    <Colouredtext onClick={() => navigate("jobs")} > View all</Colouredtext>
                 </Section2firstitem>
             )}
 

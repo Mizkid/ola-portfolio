@@ -5,7 +5,7 @@ import { GlobalStyle } from './components/GlobalStyle';
 import styled from "styled-components";
 import { Routes, Route, useNavigate } from "react-router-dom"
 
-const WorksView = React.lazy(() => import("./Views/WorksView"));
+const JobView = React.lazy(() => import("./Views/JobView"));
 const DashboardView = React.lazy(() => import("./Views/DashboardView"));
 const ProjectView = React.lazy(() => import("./Views/ProjectView"));
 const ContactView = React.lazy(() => import("./Views/ContactView"));
@@ -13,7 +13,7 @@ const ContactView = React.lazy(() => import("./Views/ContactView"));
 export const App = () => {
   const navigationData = [
     { name: "Home", path: "/" },
-    { name: "Works", path: "/works" },
+    { name: "Jobs", path: "/jobs" },
     { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
@@ -28,7 +28,7 @@ export const App = () => {
         <React.Suspense fallback={<h3>Loading ....</h3>}>
           <Routes>
             <Route path="/" element={<DashboardView />} />
-            <Route path="/works" element={<WorksView />} />
+            <Route path="/jobs" element={<JobView />} />
             <Route path="/projects" element={<ProjectView />} />
             <Route path="/contact" element={<ContactView />} />
             <Route path="*" element={

@@ -3,14 +3,19 @@ import styled from 'styled-components';
 
 const imageData = [
     {
+        imageUrl: "/github.PNG",
+        altName: "github",
+        linkTo: "https://www.github.com/Mizkid"
+    },
+    {
         imageUrl: "/Facebook.PNG",
         altName: "facebook",
-        linkTo: "https://www.facebook.com/AhmedMojeedMizkid/profile"
+        linkTo: "https://www.facebook.com/ahmedmojeed.mizkid"
     },
     {
         imageUrl: "/instagram.PNG",
         altName: "instagram",
-        linkTo: "https://www.instagram.com/ahmed_mojeed_mizkid"
+        linkTo: "https://www.instagram.com/____eleha"
     },
     {
         imageUrl: "/Twitter.PNG",
