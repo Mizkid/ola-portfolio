@@ -15,7 +15,7 @@ const imageData = [
     {
         imageUrl: "/instagram.PNG",
         altName: "instagram",
-        linkTo: "https://www.instagram.com/____eleha"
+        linkTo: "https://www.instagram.com/___eleha"
     },
     {
         imageUrl: "/Twitter.PNG",
