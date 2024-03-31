@@ -13,7 +13,7 @@ const jobData = [
         companyName: "Creating logo perfect in Afri-Tech",
         date: "17 Mar 2022",
         position: "Afri-Tech , Logo Design",
-        description: "This was about creating my first Logo in my work place @ Afri-Tech, It was very exicting then, creating something meaningful on my third months.",
+        description: "This was about creating a logo for Afri-Tech, It was very exicting then, creating something meaningful on my third months learning and then i want to keep learning more and had interest in programming also.",
     },
     {
         companyName: "Designing webpage using HTML/CSS",
@@ -30,7 +30,7 @@ const jobData = [
         companyName: "Les Gilles Limited",
         date: "15 September 2022",
         position: "Technical Support",
-        description: "Providing technical support to users addressing inquiries, troubleshooting hardware and sofware issues."},
+        description: "Providing technical support to users addressing inquiries, troubleshooting hardware and sofware issues. And conducting training sessions and workshops to educate users on basic skills."},
 ];
 
 export default function WorksView() {
