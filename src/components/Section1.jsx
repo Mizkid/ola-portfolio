@@ -5,20 +5,21 @@ import styled from 'styled-components'
 export const Section1 = () => {
     const onClick = () => {
         window.open(
-            "https://drive.google.com/file/d/1LDjzZuYbGKtBUBi97Yk1T3uxq4IkDN5X/view?usp=share_link",
+            "https://drive.google.com/file/d/1ncVWOR8QhXSNCSMW8LVkCQ1Oqxkefx18/view?usp=sharing",
             "_blank"
         );
     };
     return (
         <Section1Wrapper>
             <Section1Container>
-                <h1>Hi, I am Abdulmojeed, a Webpage Developer</h1>
-                <p>This is all about me creating my webpage, and showing to the world that i am a Webpage Developer.
-                    I develope and design and create webpages and software applications..</p>
+                <h1>Hi, I am Abdulmojeed, a Frontend Developer</h1>
+                <p>This is my webpage where you can get to know all info about me. I'm a Junior Frontend Developer, 
+                    and also a Technical Assistant. I've had a lot of experiences working on many projects and jobs,
+                     and also currently an employee @Njoin. To know more kindly check my Resume. </p>
                 <Section1Button onClick={onClick}> Download Resume </Section1Button>
             </Section1Container>
             <div>
-                <Section1Image src="/mizzy.png"
+                <Section1Image src="/Profilepic2.jpg"
                     alt="my-picture" />
             </div>
         </Section1Wrapper>

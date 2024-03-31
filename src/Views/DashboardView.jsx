@@ -6,15 +6,15 @@ import { Section3 } from "../components/Section3"
 const jobData = [
   {
     companyName: "Learning about Programing.",
-    date: "05 Jan 2015",
+    date: "05 Jan 2022",
     position: "Computer , Literacy",
-    description: "I started my learning after secondary school year 2014, i love been a computer programmer and a software developer, then this how my journey been a webpage/sofware developer.",
+    description: "I started my learning after secondary school year 2022, i love been a computer programmer and a software developer, then this how my journey been a webpage/sofware developer.",
   },
   {
     companyName: "Creating logo perfect in Afri-Tech",
-    date: "17 April 2015",
+    date: "17 Mar 2022",
     position: "Afri-Tech , Logo Design",
-    description: "This was about creating my first Logo in my work place @ Afri-Tech, It was very exicting then, creating something meaningful on my fourth months. And then graduated there in September 2015.",
+    description: "This was about creating my first Logo in my work place @ Afri-Tech, It was very exicting then, creating something meaningful on my third months.",
   },
 ];
 
@@ -24,14 +24,14 @@ const sectionData = [
     heading: "Designing a Website",
     year: "2022",
     works: "Worksheet",
-    paragraph: "This about my first text in building a webpage using CSS and Javascript, trying to create a site where people could get my info and know much about me. i created this arond september year 2022.",
+    paragraph: "This about my first test in building a webpage using CSS and Javascript, trying to create a site where people could get my info and know much about me.",
   },
   {
     imageUrl: "/Potrait.png",
     heading: "Vibrant Potrait of 2021",
-    year: "2021",
+    year: "2022",
     works: "Potrait",
-    paragraph: "This was only created to be my Potrait in illustrating my works/designs in building my webpage in year 2021, before i could learn on how to use Javascript and CSS in year 2022.",
+    paragraph: "This was only created to be my Potrait in illustrating my works/designs in building my webpage towards ending of 2021, before i could learn about coding in 2022.",
   },
   {
     imageUrl: "/Sargitarius.png",
