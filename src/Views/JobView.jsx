@@ -4,33 +4,32 @@ import styled from 'styled-components';
 
 const jobData = [
     {
-        companyName: "Learning about Programing.",
-        date: "05 Jan 2022",
-        position: "Computer , Literacy",
-        description: "I started my learning after secondary school year 2022, i love been a computer programmer and a software developer, then this how my journey been a webpage/sofware developer.",
-    },
-    {
-        companyName: "Creating logo perfect in Afri-Tech",
-        date: "17 Mar 2022",
-        position: "Afri-Tech , Logo Design",
-        description: "This was about creating a logo for Afri-Tech, It was very exicting then, creating something meaningful on my third months learning and then i want to keep learning more and had interest in programming also.",
-    },
-    {
-        companyName: "Designing webpage using HTML/CSS",
-        date: "05 August 2022",
-         position: "Learning , Creative",
-        description: "This was when i read about HTML/CSS in Ws3School and started using the basics to create a self webpage, trying to be a developer and that with the help of a senior developer.",
-    },
-    {
         companyName: "Les Gilles Limited",
         date: "05 July 2022",
-        position: "Troubleshooting",
-        description: "Assited in managing inventory of computer hardware, peripherals, and sofware lincenses and also updating records to ensure accurate asset tracking and procurement planning."},
+        position: "Technician",
+        description: "Assited in managing inventory of computer hardware, peripherals, and sofware lincenses and also updating records to ensure accurate asset tracking and procurement planning."
+    },
+
     {
         companyName: "Les Gilles Limited",
         date: "15 September 2022",
         position: "Technical Support",
-        description: "Providing technical support to users addressing inquiries, troubleshooting hardware and sofware issues. And conducting training sessions and workshops to educate users on basic skills."},
+        description: "Providing technical support to users addressing inquiries, troubleshooting hardware and sofware issues. And conducting training sessions and workshops to educate users on basic skills."
+    },
+
+    {
+        companyName: "Njoin",
+        date: "05 December 2022",
+         position: "Junior Frontend Developer",
+        description: "Actively engage in continous learning and skills developement, staying updated on emerging technologies, programming languages, and sofware developement methodologies."
+    },
+
+    {
+        companyName: "Njoin",
+        date: "17 March 2023",
+         position: " Frontend Developer",
+        description: "Development and continous integration of the company's existing products using Javascript, Typescript and React."
+    }, 
 ];
 
 export default function WorksView() {

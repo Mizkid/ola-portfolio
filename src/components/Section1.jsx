@@ -19,7 +19,7 @@ export const Section1 = () => {
                 <Section1Button onClick={onClick}> Download Resume </Section1Button>
             </Section1Container>
             <div>
-                <Section1Image src="/Profilepic2.jpg"
+                <Section1Image src="/Profilepic.jpg"
                     alt="my-picture" />
             </div>
         </Section1Wrapper>

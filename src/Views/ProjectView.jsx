@@ -4,31 +4,25 @@ import { Section3 } from '../components/Section3'
 const sectionData = [
     {
         imageUrl: "/VsCode.png",
-        heading: "Designing a Website",
+        heading: "Markup",
         year: "2022",
-        works: "Sketching",
-        paragraph: "This about my first time in building a webpage using HTML, CSS and Javascript, trying to create a site where people could get my info and know much about me."
+        works: "HTML | HTML5 ",
+        paragraph: "This was a project given to me at first after learning about Markup, which basically is about HTML (Hyper Text Markup Language)",
     },
     {
-        imageUrl: "/Webpage.png",
+        imageUrl: "/Website.png",
         heading: "Troubleshooting | Training",
         year: "2022",
         works: "Technical Assistant ",
         paragraph: "This was me providing a technical support to users addressing inquiries, troubleshooting hardware and sofware issues. And same time conducting training sessions and workshops in educating users on basic computer skills, software usage and more.",
     },
     {
-        imageUrl: "/Sargitarius.png",
-        heading: "My Days in Creating my website",
-        year: "2022",
-        works: "Typography",
-        paragraph: "Here comes my days in designing my first website, it was all along reading online about been a Developer, i read about it for like 2 months and then i started my journey been a webpage/software developer and here i am today building my first webpage.",
-    },
-    {
         imageUrl: "/Javascript.png",
-        heading: "Colaboration | Team",
-        year: "2023",
-        works: "Worksheet",
-        paragraph: "Collaborated with the development team to design,  code, and test sofware applications,  ensuring adherence to coding standard."},
+        heading: "Languages",
+        year: "2022",
+        works: "Javascript | Typescript | C# | Java ",
+        paragraph: "This was my first time trying to create something using all different kind of languages in building a webpage and had a great time while on this project. ",
+    },
     {
         imageUrl: "/react-icons.png",
         heading: "Updating on React",

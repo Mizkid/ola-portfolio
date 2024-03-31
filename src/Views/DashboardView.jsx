@@ -5,40 +5,35 @@ import { Section3 } from "../components/Section3"
 
 const jobData = [
   {
-    companyName: "Learning about Programing.",
-    date: "05 Jan 2022",
-    position: "Computer , Literacy",
-    description: "I started my learning after secondary school year 2022, i love been a computer programmer and a software developer, then this how my journey been a webpage/sofware developer.",
-  },
-  {
-    companyName: "Creating logo perfect in Afri-Tech",
-    date: "17 Mar 2022",
-    position: "Afri-Tech , Logo Design",
-    description: "This was about creating my first Logo in my work place @ Afri-Tech, It was very exicting then, creating something meaningful on my third months.",
-  },
+    companyName: "Les Gilles Limited",
+    date: "15 September 2022",
+    position: "Technical Support",
+    description: "Providing technical support to users addressing inquiries, troubleshooting hardware and sofware issues. And conducting training sessions and workshops to educate users on basic skills."
+},
+
+{
+    companyName: "Njoin",
+    date: "05 December 2022",
+     position: "Junior Frontend Developer",
+    description: "Actively engage in continous learning and skills developement, staying updated on emerging technologies, programming languages, and sofware developement methodologies."
+},
 ];
 
 const sectionData = [
   {
     imageUrl: "/VsCode.png",
-    heading: "Designing a Website",
+    heading: "Markup",
     year: "2022",
-    works: "Worksheet",
-    paragraph: "This about my first test in building a webpage using CSS and Javascript, trying to create a site where people could get my info and know much about me.",
+    works: "HTML | HTML5 ",
+    paragraph: "This was a project given to me at first after learning about Markup, which basically is about HTML (Hyper Text Markup Language)",
   },
+  
   {
-    imageUrl: "/Potrait.png",
-    heading: "Vibrant Potrait of 2021",
+    imageUrl: "/Javascript.png",
+    heading: "Languages",
     year: "2022",
-    works: "Potrait",
-    paragraph: "This was only created to be my Potrait in illustrating my works/designs in building my webpage towards ending of 2021, before i could learn about coding in 2022.",
-  },
-  {
-    imageUrl: "/Sargitarius.png",
-    heading: "My Days in Creating my website",
-    year: "2023",
-    works: "Typography",
-    paragraph: "Here comes my days in designing my first website, it was all along reading online about been a Developer, i read about it for like 2 months and then i started my journey been a webpage/software developer and here i am today building my first webpage.",
+    works: "Javascript | Typescript | C# | Java ",
+    paragraph: "This was my first time trying to create something using all different kind of languages in building a webpage and had a great time while on this project. ",
   },
 ];
 
